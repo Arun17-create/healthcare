@@ -17,9 +17,16 @@
         <div class="top-bar">
             <div class="top-bar-content">
                 <a href="#" class="top-link">Mirth Connect <i class="fa-solid fa-circle-chevron-right"></i></a>
-                <a href="#" class="top-link">NextGen Office Login <i class="fa-solid fa-circle-chevron-right"></i></a>
                 <div class="dropdown">
-                    <a href="#" class="top-link text-black">Clients <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="javascript:void(0)" class="top-link text-black" onclick="toggleDropdown(event, 'clients-menu')">Clients <i class="fa-solid fa-chevron-down"></i></a>
+                    <div id="clients-menu" class="dropdown-content">
+                        <a href="#">Client Advocate Program</a>
+                        <a href="#">Client Success Community</a>
+                        <a href="#">Client Support</a>
+                        <a href="#">Learning Center</a>
+                        <a href="index.html">NextGen Office Login</a>
+                        <a href="#">UGM 25</a>
+                    </div>
                 </div>
                 <a href="#" class="top-link search-link"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
                 <a href="#" class="btn btn-outline-blue">Schedule Demo</a>
@@ -244,9 +251,21 @@
             targetMenu.classList.toggle('show');
         }
 
+        function toggleDropdown(e, menuId) {
+            e.preventDefault();
+            const btn = e.currentTarget;
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('show');
+            btn.classList.toggle('active');
+        }
+
         document.addEventListener('click', function(e) {
             if(!e.target.closest('.main-nav')) {
                 document.querySelectorAll('.mega-menu.show').forEach(m => m.classList.remove('show'));
+            }
+            if(!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-content.show').forEach(m => m.classList.remove('show'));
+                document.querySelectorAll('.dropdown .top-link.active').forEach(b => b.classList.remove('active'));
             }
         });
 
