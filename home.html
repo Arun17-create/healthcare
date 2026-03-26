@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Healthcare Supportive System</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <a href="#" class="top-link">Mirth Connect <i class="fa-solid fa-circle-chevron-right"></i></a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="top-link text-black" onclick="toggleDropdown(event, 'clients-menu')">Clients <i class="fa-solid fa-chevron-down"></i></a>
+                    <div id="clients-menu" class="dropdown-content">
+                        <a href="#">Client Advocate Program</a>
+                        <a href="#">Client Success Community</a>
+                        <a href="#">Client Support</a>
+                        <a href="#">Learning Center</a>
+                        <a href="index.html">NextGen Office Login</a>
+                        <a href="#">UGM 25</a>
+                    </div>
+                </div>
+                <a href="#" class="top-link search-link"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                <a href="#" class="btn btn-outline-blue">Schedule Demo</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="main-nav-content">
+                <div class="logo">
+                   <img src="https://www.nextgen.com/-/media/themes/nextgen/health/healthsite/images/logo.svg" alt="NextGen Healthcare" style="height: 35px; width: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                   <span style="display: none; color: #dc582a; font-size: 28px; font-weight: 700; font-family: 'Outfit';">next<span style="color: #444; font-weight: 300;">gen</span><span style="font-size: 10px; color:#666; font-weight: normal; margin-left: 5px;">healthcare</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li class="has-mega-menu">
+                        <a href="javascript:void(0)" onclick="toggleMegaMenu(event, 'solutions-menu')">Solutions</a>
+                        <div id="solutions-menu" class="mega-menu solutions-mega-menu">
+                            <div class="solutions-menu-content">
+                                <!-- Left Tabs -->
+                                <div class="solutions-tabs">
+                                    <button class="tab-btn active" onclick="openSolutionTab(event, 'ehr')">Electronic Health Records (EHR)</button>
+                                    <button class="tab-btn" onclick="openSolutionTab(event, 'pm')">Practice Management</button>
+                                    <button class="tab-btn" onclick="openSolutionTab(event, 'px')">Patient Experience</button>
+                                    <button class="tab-btn" onclick="openSolutionTab(event, 'provider')">Provider Experience</button>
+                                    <button class="tab-btn" onclick="openSolutionTab(event, 'rcm')">Revenue Cycle Management</button>
+                                    <button class="tab-btn" onclick="openSolutionTab(event, 'analytics')">Analytics and Insights</button>
+                                </div>
+                                
+                                <!-- Right Content Area -->
+                                <div class="solutions-tab-panels">
+                                    <div id="tab-ehr" class="tab-panel active">
+                                        <div class="panel-columns">
+                                            <div class="panel-col">
+                                                <h4 class="panel-title">Electronic Health Records (EHR)</h4>
+                                                <p class="panel-desc">A trusted partner for ambulatory health—elevating performance and driving efficiency with AI & automation-enhanced solutions to maximize better healthcare outcomes for all.</p>
+                                                
+                                                <div class="panel-link-item">
+                                                    <a href="#">NextGen Enterprise (10+ Providers)</a>
+                                                    <p>Enhance quality care, optimize operations, and drive better financial outcomes with our fully integrated, award-winning platform.</p>
+                                                </div>
+                                                
+                                                <div class="panel-link-item">
+                                                    <a href="#">NextGen Office (Under 10 Providers)</a>
+                                                    <p>Enhance care quality, operations, and financial outcomes with our fully integrated, award-winning small practice solutions.</p>
+                                                </div>
+                                                
+                                                <a href="#" class="view-all-link">
+                                                    <span class="link-text"><i class="fa-solid fa-circle-arrow-right"></i> View All EHR Solutions</span>
+                                                    <span class="subtext">View all of our electronic health record solutions.</span>
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="panel-col">
+                                                <h4 class="panel-title">AI & NextGen Mobile (EHR)</h4>
+                                                <p class="panel-desc">Say goodbye to after-hours charting with the intuitive, clear, and convenient NextGen Mobile. Access to your practice and powerful documentation tools, all in the palm of your hand.</p>
+                                                
+                                                <div class="panel-link-item">
+                                                    <a href="#">NextGen Ambient Assist</a>
+                                                    <p>Streamline documentation, reduce administrative burden, and enhance patient care with powerful recommendations.</p>
+                                                </div>
+                                                
+                                                <div class="panel-link-item">
+                                                    <a href="#">NextGen Mobile (EHR)</a>
+                                                    <p>An intuitive, user-friendly mobile experience helps you increase efficiency and access the EHR, anytime and from anywhere.</p>
+                                                </div>
+                                                
+                                                <a href="#" class="view-all-link">
+                                                    <span class="link-text"><i class="fa-solid fa-circle-arrow-right"></i> View All Mobile EHR</span>
+                                                    <span class="subtext">View all of our mobile electronic health record solutions.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="tab-pm" class="tab-panel">
+                                        <div class="panel-columns">
+                                            <div class="panel-col">
+                                                <h4 class="panel-title">Practice Management</h4>
+                                                <p class="panel-desc">Comprehensive practice management solutions to streamline your workflow.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-mega-menu">
+                        <a href="javascript:void(0)" onclick="toggleMegaMenu(event, 'services-menu')" class="active-link">Services</a>
+                        <div id="services-menu" class="mega-menu">
+                            <div class="mega-menu-content">
+                                <h3 class="mega-menu-title">Services</h3>
+                                <div class="mega-menu-grid">
+                                    <div class="menu-item">
+                                        <a href="#">Care Management Support Services</a>
+                                        <p>Streamline operations, enhance patient care, and ensure the efficient utilization of EHR.</p>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="#">Consulting</a>
+                                        <p>Consulting services to meet your practice's unique health IT needs.</p>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="#">Credentialing Services</a>
+                                        <p>We specialize in credentialing services for independent physician practices.</p>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="#">Managed Cloud Hosting</a>
+                                        <p>Elevate your practice's health IT with managed cloud services.</p>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="#">Managed Services</a>
+                                        <p>Streamline operations, enhance patient care, and ensure the efficient utilization of EHR.</p>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="#">Professional Services</a>
+                                        <p>To help ensure your success so you can provide the best care possible.</p>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="#">Training</a>
+                                        <p>Access expert training on your EMR and other NextGen Healthcare solutions.</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-cards">
+                                    <div class="menu-card light-blue-bg">
+                                        <a href="#">View All NextGen's Available Services</a>
+                                        <p>Choose from a variety of service and support options to make it easier for your practice to get the most out of technology.</p>
+                                    </div>
+                                    <div class="menu-card light-blue-bg">
+                                        <a href="#">Put the Breaks on Burnout</a>
+                                        <p>Whether it be chronic care management, remote patient care, behavioral health integration, or you simply want to provide the most expansive care possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#specialties">Specialties</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Your Practice.<br>Our Purpose.™</h1>
+                    <p class="hero-desc">Intelligent EHR, PM, Patient Experience, and RCMS turn complexity into clarity. With AI-powered workflows and real-time patient engagement, practices can perform their best—today and tomorrow.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">Schedule Meeting</a>
+                        <a href="#" class="btn btn-text-blue">Chat With Sales <i class="fa-regular fa-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <video src="patient.mp4" controls autoplay muted loop style="width: 100%; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); display: block;"></video>
+                </div>
+            </div>
+        </section>
+
+        <section id="solutions" class="solution-section">
+            <div class="container solution-container">
+                <div class="solution-content">
+                    <span class="section-tag">SOLUTION</span>
+                    <h2 class="section-title">The New UI is No UI™</h2>
+                    <p class="section-desc">Providers shouldn't be tied to the keyboard. We're using AI to improve doctor-patient connections to make healthcare better for both.</p>
+                    <br>
+                    <p class="section-desc">On a smartphone, NextGen® Ambient Assist automatically transforms doctor-patient conversations into structured SOAP notes... saving providers up to 2.5 hours per day... and bringing the joy back to medicine.</p>
+                    <div style="margin-top: 30px;">
+                        <a href="#" class="btn btn-text-blue bold-text">See Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-visual">
+                    <div class="visual-wrapper">
+                        <div class="image-container">
+                            <img src="patient consulation.jpg" alt="Doctor and Patient Consultation" class="main-img">
+                            
+                            <div class="phone-mockup">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=300&q=80" alt="App UI" class="phone-img">
+                                <div class="app-overlay">
+                                    <div class="app-header">Ambient Assist</div>
+                                    <div class="app-body">
+                                        <div class="line w-80"></div>
+                                        <div class="line w-100"></div>
+                                        <div class="line w-90"></div>
+                                        <div class="line w-60"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-bottom">
+                <hr>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMegaMenu(e, menuId) {
+            e.preventDefault();
+            const menus = document.querySelectorAll('.mega-menu');
+            const targetMenu = document.getElementById(menuId);
+            
+            menus.forEach(menu => {
+                if(menu.id !== menuId && menu.classList.contains('show')) {
+                    menu.classList.remove('show');
+                }
+            });
+            
+            targetMenu.classList.toggle('show');
+        }
+
+        function toggleDropdown(e, menuId) {
+            e.preventDefault();
+            const btn = e.currentTarget;
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('show');
+            btn.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            if(!e.target.closest('.main-nav')) {
+                document.querySelectorAll('.mega-menu.show').forEach(m => m.classList.remove('show'));
+            }
+            if(!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-content.show').forEach(m => m.classList.remove('show'));
+                document.querySelectorAll('.dropdown .top-link.active').forEach(b => b.classList.remove('active'));
+            }
+        });
+
+        function openSolutionTab(evt, tabId) {
+            evt.preventDefault();
+            evt.stopPropagation();
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+            
+            const tablinks = document.querySelectorAll('.tab-btn');
+            tablinks.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById('tab-' + tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
